@@ -2,6 +2,11 @@
   "name": "interview-exercise",
   "version": "0.1.0",
   "private": true,
+  "description": "Next.js sandbox for timed interview prototypes",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",

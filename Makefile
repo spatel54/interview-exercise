@@ -1,4 +1,14 @@
-.PHONY: install dev build start test lint typecheck verify clean
+.DEFAULT_GOAL := help
+
+.PHONY: help install dev build start test lint typecheck verify clean
+
+help:
+	@printf '%s\n' \
+		'install     Install dependencies' \
+		'dev         Start the Next.js dev server' \
+		'verify      Typecheck, lint, and test' \
+		'build       Production build' \
+		'clean       Remove build artifacts and node_modules'
 
 install:
 	npm install
