@@ -4,6 +4,10 @@ Durable, non-obvious facts about this repo that outlive a single session — dec
 
 Keep entries short. Update or remove entries that go stale.
 
+## Scenario
+
+WonderPark: amusement park, ~200 found items/day. Guests submit lost-item descriptions; staff manually search for matches while also answering calls and coordinating across shifts.
+
 ## Decisions
 
 - (none yet)
