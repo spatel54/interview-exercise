@@ -7,9 +7,8 @@ Living task list for the interview exercise.
 - [x] Next.js + TypeScript + Tailwind scaffold
 - [x] Zustand store + Vitest tests
 - [x] Makefile and verify pipeline
-- [x] Claude context engineering layer
 - [x] Git init and initial push
-- [x] Docs grouped under `docs/` (`plan`, `progress`, `memory`, `adr`, `context`)
+- [x] Docs grouped under `docs/`
 
 ## Interview feature (pending)
 

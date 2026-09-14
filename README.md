@@ -33,12 +33,11 @@ make verify   # typecheck, lint, and tests
 ## Layout
 
 ```
-src/app/            Routes and global styles
-src/components/     UI
-src/store/          Client state
-src/test/           Test setup
-docs/               Plan, session log, and architecture notes
-.claude/rules/      Claude workflow rules
+src/app/          Routes and global styles
+src/components/   UI
+src/store/        Client state
+src/test/         Test setup
+docs/             Plan and architecture notes
 ```
 
 ## Commands
