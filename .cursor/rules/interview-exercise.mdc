@@ -1,0 +1,24 @@
+---
+description: Interview exercise prototype conventions and context loading
+alwaysApply: true
+---
+
+# Interview Exercise
+
+Rapid prototype repo. Stack: Next.js 15, TypeScript, Tailwind v4, Zustand, Vitest.
+
+## Commands
+
+Prefer `make install`, `make dev`, `make verify` over raw npm scripts.
+
+## Context loading
+
+Before broad exploration, read `docs/context/retrieval-index.md`. Pin minimum files for the task.
+
+## Quality gate
+
+Run `make verify` before declaring work complete.
+
+## Session state
+
+Update `PROGRESS.md` (RALPH format) after multi-step work. Durable decisions go in `MEMORY.md`.
