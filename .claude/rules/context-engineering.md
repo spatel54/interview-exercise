@@ -33,6 +33,15 @@ After meaningful work, append to `docs/progress.md`:
 ### History
 ```
 
+## Write-back after an important decision
+
+Applies in both coding sessions and design/whiteboarding sessions (see `CLAUDE.md` → Design Thinking Partner Mode). The moment a decision is made — a chosen direction, an architectural choice, a rejected alternative and why, a constraint agreed to — write back before moving on, unprompted:
+
+- RALPH block to `docs/progress.md` (see format above).
+- `docs/memory.md` entry if the decision must survive into a future session.
+
+Do not defer this to end-of-session compaction; do it at the decision point.
+
 ## Compaction
 
 When compacting, produce:
