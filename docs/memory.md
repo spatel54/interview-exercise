@@ -1,4 +1,4 @@
-# MEMORY.md
+# Memory
 
 Durable agent memory for **interview-exercise**. Update when a decision must survive across sessions.
 
@@ -19,7 +19,7 @@ Durable agent memory for **interview-exercise**. Update when a decision must sur
 
 - Starter UI: `src/components/PrototypeShell.tsx`
 - Demo store: `src/store/prototype-store.ts`
-- Context layer: `CLAUDE.md`, `.claude/rules/`, `docs/context/`
+- Context layer: `CLAUDE.md`, `.claude/rules/`, `docs/`
 
 ## Open questions
 

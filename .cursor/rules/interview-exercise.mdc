@@ -21,4 +21,4 @@ Run `make verify` before declaring work complete.
 
 ## Session state
 
-Update `PROGRESS.md` (RALPH format) after multi-step work. Durable decisions go in `MEMORY.md`.
+Update `docs/progress.md` (RALPH format) after multi-step work. Durable decisions go in `docs/memory.md`.

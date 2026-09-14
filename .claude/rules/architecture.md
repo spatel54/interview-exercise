@@ -10,7 +10,7 @@
 1. Read relevant ADR in `docs/adr/`
 2. If no ADR covers the change and it affects stack or structure → draft new ADR
 3. Update `docs/context/system-map.md` if directory contract changes
-4. Record in `MEMORY.md` if non-obvious
+4. Record in `docs/memory.md` if non-obvious
 
 ## File placement
 
@@ -29,4 +29,4 @@
 make verify
 ```
 
-Must pass unless user explicitly accepts debt (document in PROGRESS History).
+Must pass unless user explicitly accepts debt (document in `docs/progress.md` History).

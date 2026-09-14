@@ -24,8 +24,8 @@ High-level architecture for agent orientation. Read this for "where does X live?
 | `src/components/` | Presentational and container UI |
 | `src/store/` | Client state (Zustand) |
 | `src/test/` | Vitest setup |
+| `docs/` | Plan, session log, memory, ADRs |
 | `docs/context/` | Agent retrieval maps |
-| `docs/adr/` | Architecture decisions |
 | `.claude/rules/` | Modular Claude rules |
 
 ## Data flow (current baseline)

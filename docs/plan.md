@@ -9,6 +9,7 @@ Living task list for the interview exercise.
 - [x] Makefile and verify pipeline
 - [x] Claude context engineering layer
 - [x] Git init and initial push
+- [x] Docs grouped under `docs/` (`plan`, `progress`, `memory`, `adr`, `context`)
 
 ## Interview feature (pending)
 

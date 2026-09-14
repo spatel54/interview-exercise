@@ -13,7 +13,7 @@ Preview → Confirmation → Execute for non-trivial tasks.
 1. Match existing code conventions
 2. Minimal diff
 3. Run `make verify` when touching logic
-4. Update `PROGRESS.md` for multi-step work
+4. Update `docs/progress.md` for multi-step work
 
 ## Skip gate triggers
 

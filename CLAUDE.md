@@ -65,11 +65,11 @@ LLMs are stateless; **context quality is the only lever**. Target **40–60% con
 
 Never blend phases on non-trivial work:
 
-1. **Research** — Read `docs/plan.md` and `PROGRESS.md`. Scout with `grep`/symbol search; do not read whole directories. Record in `PROGRESS.md` (RALPH). No code yet.
+1. **Research** — Read `docs/plan.md` and `docs/progress.md`. Scout with `grep`/symbol search; do not read whole directories. Record in `docs/progress.md` (RALPH). No code yet.
 2. **Plan** — Structured block + confirmation (unless skip gate). Update `docs/plan.md` checkboxes.
 3. **Implement** — Small chunks. Run `make verify` after each chunk.
 
-### RALPH loop (`PROGRESS.md`)
+### RALPH loop (`docs/progress.md`)
 
 Each session block records:
 - **R**easoning — why this approach
@@ -82,7 +82,7 @@ Each session block records:
 
 Trigger at ~10 exchanges on one topic or when context is heavy:
 
-1. Write status to `PROGRESS.md` (RALPH).
+1. Write status to `docs/progress.md` (RALPH).
 2. Update `docs/plan.md`.
 3. Suggest a fresh session pinning updated files.
 
@@ -94,7 +94,7 @@ Load only what the task needs — see `docs/context/retrieval-index.md`:
 | --- | --- |
 | Architecture | `docs/context/system-map.md` |
 | Feature work | `docs/plan.md` + target `src/` files |
-| Debugging | `PROGRESS.md` + terminal error |
+| Debugging | `docs/progress.md` + terminal error |
 | New ADR | `docs/adr/` template + related ADR |
 
 Full rules: `.claude/rules/context-engineering.md`
@@ -194,6 +194,16 @@ Compare against user value, simplicity, feasibility, cognitive load, risk, learn
 
 Do not congratulate. Ask: What assumption is being made? Strongest argument against it? What happens on failure? What could confuse the user? What to validate first? Is there a simpler version? If it still holds up, say so briefly.
 
+### Write-back after an important decision
+
+When the user commits to a direction, framing, or any decision that should survive past this session, apply the same context-engineering write-back used in coding mode (see `.claude/rules/context-engineering.md`):
+
+- Append a RALPH block to `docs/progress.md` — **Reasoning** (why this direction), **Action** (what was decided), **Learning** (what the discussion surfaced), **Progression** (what's settled vs. still open), **History** (constraints on this decision that must not be silently reversed).
+- If the decision is durable enough to matter in a future session (a direction, a rejected alternative and why, a constraint), record it in `docs/memory.md` too.
+- Do this write-back yourself, without waiting to be asked — it's part of closing out the decision, not a separate task.
+
+This does not change the Hard Rule above — writing back the user's decision is not the same as generating the answer for them.
+
 ### UI design phase
 
 Before generating any interface, identify: critical information, primary action, secondary actions, system state, feedback, failure handling. Then let the user design the interface — don't generate a full UI unprompted.
@@ -233,4 +243,5 @@ After any user correction:
 
 <!-- Format: **[YYYY-MM-DD] Rule:** description -->
 
-**[2026-09-13] Rule:** Session learnings go in `PROGRESS.md` (RALPH). Distinct from `notes/journey.md` (corrections) and `docs/plan.md` (task list).
+**[2026-09-13] Rule:** Session learnings go in `docs/progress.md` (RALPH). Distinct from `notes/journey.md` (corrections) and `docs/plan.md` (task list).
+**[2026-09-13] Rule:** Session files live under `docs/` (`progress.md`, `memory.md`, `plan.md`). `CLAUDE.md` and `AGENTS.md` stay at the repo root.
