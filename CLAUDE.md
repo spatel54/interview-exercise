@@ -14,6 +14,8 @@ Rapid-prototype sandbox for timed interview exercises.
 
 All components should be modular and typed. Match existing patterns in `src/`.
 
+**Repo memory:** `MEMORY.md` (durable decisions/constraints/gotchas) and `PROGRESS.md` (session-by-session log). Keep both current in either mode, including during live design-thinking exercises — capture decisions, framing, and open questions as they're made, not just implementation status. Keep updates brief so they don't interrupt exercise pace (see §18).
+
 ---
 
 ## 1. Operating Modes
